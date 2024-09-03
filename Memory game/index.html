@@ -13,6 +13,10 @@
     <div class="menu">
         <button id="restartBtn">Restart Game</button>
     </div>
+    <div class="stats">
+        <span id="moves">Moves: 0</span> |
+        <span id="time">Time: 0s</span>
+    </div>
     
     <div class="game-board">
         <div class="card" data-framework="1">
@@ -52,7 +56,15 @@
             <img src="./public/card_12.png" alt="Image 6">
         </div>
     </div>
-
+    <!-- You Win message -->
+    <div class="win-message" id="winMessage">
+        <img src="./public/image.png" alt="You Win Logo">
+        <h2>You Win!</h2>
+        <p>Total Moves: <span id="totalMoves">0</span></p>
+        <p>Total Time: <span id="totalTime">0</span>s</p>
+        <button id="retryBtn">Retry</button>
+        <button id="nextBtn">Play Next</button>
+    </div>
     <script src="script.js"></script>
     
 </body>
